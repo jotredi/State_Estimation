@@ -19,7 +19,7 @@ The filter implementation is tested by comparing the estimated vehicle position 
 
 ## Sensor Miscalibration
 
-Sensor calibration is really important in order to get accurate measurements and reduce errors in the estimates. A common problem in sensor miscalibration where one or more sensons are not calibrated correctly.
+Sensor calibration is really important in order to get accurate measurements and reduce errors in the estimates. A common problem is sensor miscalibration where one or more sensors are not calibrated correctly.
 
 We will examine the effects of sensor miscalibration on the vehicle pose estimates, intentionally changing the transformation between the LIDAR sensor frame and the IMU sensor frame. Use of the incorrect transform will result in errors in the vehicle position estimate as we can see in the position stimate and error plots:
 
