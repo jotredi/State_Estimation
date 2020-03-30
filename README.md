@@ -44,4 +44,4 @@ To illustrate this, we again can take a look at the position and error plots:
 In this case, we should increase both LIDAR and GNSS variances in order to account for these errors.
 
 ## Refence
-* This is the final project from the course "State Estimation and Localization for Self-Driving Cars" from the University of Toronto.
+* This is the final project from the course [State Estimation and Localization for Self-Driving Cars](https://www.coursera.org/learn/state-estimation-localization-self-driving-cars?) from the University of Toronto.
