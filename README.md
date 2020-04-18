@@ -32,16 +32,18 @@ Here are the plots after making these changes:
 
 ## Sensor Dropout
 
-Sensot Dropout is the loss or malfunction of one or more sensors for a period of time. This can happen for a number of different reasons, like weather damage, firmware failures, or entering a tunnel without GPS connection. 
+Sensot Dropout is the loss or malfunction of one or more sensors for a period of time. This can happen for a number of different reasons, like weather damage, firmware failures, or entering a tunnel with no GPS connection. 
 
 In this project, we will explore the effects of sensor dropout, that is, when all external positioning information (from GPS and LIDAR) is lost for a short period of time.
 To do this, we will load a different dataset where a portion of the GPS and LIDAR measurements are missing.
 
-To illustrate this, we again can take a look at the position and error plots:
+To illustrate this, we again can take a look at the position and error plots. In the position estimate, we can actually see an error during a small portion of the trajectory due to the sensors dropout.
 
 <img src="Images/p3.png"  height="250"> <img src="Images/p3_error.png"  height="250"> 
 
-In this case, we should increase both LIDAR and GNSS variances in order to account for these errors.
+In this case, we only get IMU measurements for a period of time (without the correction step given by GPS and LIDAR data), so the error will increase over time. Due to this, we should have less confidence (higher uncertainty) on its measurements and therefore increase the IMU sensor variance with the resulting plots:
+
+<img src="Images/p3_corrected.png"  height="250"> <img src="Images/p3_error_corrected.png"  height="250"> 
 
 ## Refence
 * This is the final project from the course [State Estimation and Localization for Self-Driving Cars](https://www.coursera.org/learn/state-estimation-localization-self-driving-cars?) from the University of Toronto.
