@@ -32,7 +32,7 @@ Here are the plots after making these changes:
 
 ## Sensor Dropout
 
-Sensot Dropout is the loss or malfunction of one or more sensors for a period of time. This can happen for a number of different reasons, like weather damage, firmware failures, or something as simple as a loose wire. 
+Sensot Dropout is the loss or malfunction of one or more sensors for a period of time. This can happen for a number of different reasons, like weather damage, firmware failures, or entering a tunnel without GPS connection. 
 
 In this project, we will explore the effects of sensor dropout, that is, when all external positioning information (from GPS and LIDAR) is lost for a short period of time.
 To do this, we will load a different dataset where a portion of the GPS and LIDAR measurements are missing.
